@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pd-page-title">Product — Herculis Design Studio</title>
+<meta name="description" content="Instant-download digital product from Herculis Design Studio.">
+<link rel="canonical" href="https://www.herculisdesignstudio.com/product.html">
+<link rel="icon" href="assets/icons/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="reading-progress" aria-hidden="true"></div>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="announcement">
+  Summer sale — 20% off all planner bundles this week.
+  <button aria-label="Dismiss announcement">×</button>
+</div>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark">H</span> Herculis</a>
+    <nav id="nav-links" class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-search" role="search">
+      <span aria-hidden="true">⌕</span>
+      <input type="search" placeholder="Search planners, journals…" aria-label="Search products" onkeydown="if(event.key==='Enter'){window.location.href='shop.html?q='+encodeURIComponent(this.value);}">
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+      <a class="icon-btn" href="shop.html" aria-label="Wishlist">♡<span class="badge-count wishlist-count hidden">0</span></a>
+      <button class="icon-btn" id="cart-toggle" aria-label="Open cart">🛍<span class="badge-count cart-count hidden">0</span></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section" id="product-detail">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span id="pd-category">Category</span></nav>
+
+      <div class="platform-select" role="group" aria-label="Choose where to buy from" style="margin:0 0 28px;">
+        <span class="platform-label">Buy from:</span>
+        <button class="platform-btn" data-platform="gumroad">Gumroad</button>
+        <button class="platform-btn" data-platform="pristify">Pristify</button>
+        <button class="platform-btn" data-platform="payhip">Payhip</button>
+      </div>
+
+      <div class="hero-grid" style="align-items:flex-start;">
+        <div class="product-gallery">
+          <div class="gallery-main"><img id="pd-main-image" src="" alt=""></div>
+          <div class="gallery-thumbs">
+            <img class="active" src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=200&q=80" alt="View 1">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=200&q=80" alt="View 2">
+            <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=200&q=80" alt="View 3">
+          </div>
+        </div>
+
+        <div>
+          <div class="product-category" id="pd-category-label" style="margin-bottom:6px;"></div>
+          <h1 id="pd-title" style="font-family:var(--font-heading); font-size:clamp(1.6rem,3vw,2.1rem);"></h1>
+          <div class="product-rating" style="margin-bottom:14px;"><span class="stars" id="pd-rating-stars" aria-hidden="true"></span><span id="pd-rating-text"></span></div>
+          <div class="price" id="pd-price" style="font-size:26px; margin-bottom:16px;"></div>
+          <p id="pd-desc"></p>
+
+          <ul class="feature-list" style="margin:20px 0;">
+            <li>Instant digital download</li>
+            <li>Editable in Canva version included</li>
+            <li>Print-ready + on-screen formats</li>
+            <li>Free lifetime updates to this file</li>
+          </ul>
+
+          <div class="flex gap-8" style="margin-bottom:18px;">
+            <a id="pd-buy-btn" class="btn btn-primary" style="flex:1; text-align:center;">Buy now</a>
+            <button id="pd-wish-btn" class="icon-btn" aria-label="Save to wishlist" aria-pressed="false">♡</button>
+          </div>
+
+          <div class="trust-row">
+            <span class="trust-item">🔒 Secure checkout</span>
+            <span class="trust-item">⚡ Instant delivery</span>
+            <span class="trust-item">↺ Refund eligible</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tabs" role="tablist">
+        <button class="product-tab active" data-tab="details" role="tab">Description</button>
+        <button class="product-tab" data-tab="specs" role="tab">Specifications</button>
+        <button class="product-tab" data-tab="license" role="tab">License</button>
+        <button class="product-tab" data-tab="reviews" role="tab">Reviews</button>
+      </div>
+
+      <div id="tab-details" class="tab-panel">
+        <h3>What's included</h3>
+        <p>A ready-to-use file set built for immediate download and either home printing or digital use in apps like GoodNotes or Canva.</p>
+        <ul class="feature-list">
+          <li>High-resolution PDF for printing</li>
+          <li>Editable Canva template link</li>
+          <li>Letter and A4 paper sizes</li>
+          <li>Quick-start usage guide</li>
+        </ul>
+      </div>
+      <div id="tab-specs" class="tab-panel hidden">
+        <h3>Specifications</h3>
+        <p>File format: PDF, Canva link · Paper size: Letter &amp; A4 · Orientation: Portrait · Compatible devices: iPad, tablet, desktop, or standard home printer.</p>
+      </div>
+      <div id="tab-license" class="tab-panel hidden">
+        <span class="badge badge-new" style="margin-bottom:10px; display:inline-block;">Editable in Canva</span>
+        <span class="badge" style="margin-bottom:10px; display:inline-block;">Instant download</span>
+        <h3>License</h3>
+        <p>Personal and single small-business use. Redistribution or resale of the files themselves isn't permitted. See our <a href="license.html" style="color:var(--color-primary); font-weight:600;">full license terms</a> for details.</p>
+      </div>
+      <div id="tab-reviews" class="tab-panel hidden">
+        <h3>Customer reviews</h3>
+        <div class="testimonial-card" style="margin-bottom:16px;">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p style="margin-top:10px;">"Exactly what I needed — printed beautifully and the layout is so clean."</p>
+        </div>
+        <div class="testimonial-card">
+          <span class="stars" aria-hidden="true">★★★★☆</span>
+          <p style="margin-top:10px;">"Great template. Would love a few more color options in future updates."</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section-head" style="text-align:left;">
+        <span class="eyebrow">You might also like</span>
+        <h2>Related products</h2>
+      </div>
+      <div id="related-grid" class="grid grid-4" style="margin-bottom:64px;"></div>
+
+      <div class="section-head" style="text-align:left;">
+        <span class="eyebrow">Your history</span>
+        <h2>Recently viewed</h2>
+      </div>
+      <div id="recent-grid" class="grid grid-4"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo"><span class="logo-mark">H</span> Herculis</a>
+        <p style="margin-top:14px; max-width:280px;">Premium digital products designed for everyday life.</p>
+        <div class="footer-social">
+          <a class="icon-btn" href="#" aria-label="Pinterest">P</a>
+          <a class="icon-btn" href="#" aria-label="Instagram">IG</a>
+          <a class="icon-btn" href="#" aria-label="Gumroad">G</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul><li><a href="shop.html">Shop</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul><li><a href="shop.html">Planners</a></li><li><a href="shop.html">Journals</a></li><li><a href="shop.html">Business tools</a></li><li><a href="shop.html">Teacher resources</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li><li><a href="license.html">License</a></li><li><a href="refund.html">Refund policy</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Herculis Design Studio. All rights reserved.</span>
+      <a href="#" id="footer-top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<div class="drawer-overlay"></div>
+<aside class="drawer" aria-label="Shopping cart">
+  <div class="drawer-head"><h3 style="margin:0;">Your cart</h3><button class="icon-btn" id="drawer-close" aria-label="Close cart">×</button></div>
+  <div class="drawer-body"></div>
+  <div class="drawer-foot">
+    <div class="drawer-total"><span>Total</span><span class="drawer-total-amount">$0</span></div>
+    <button class="btn btn-primary btn-block">Checkout</button>
+  </div>
+</aside>
+
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cat = document.getElementById('pd-category');
+    const catLabel = document.getElementById('pd-category-label');
+    const obs = new MutationObserver(() => { if (cat.textContent) { catLabel.textContent = cat.textContent; obs.disconnect(); } });
+    obs.observe(cat, { childList: true });
+  });
+</script>
+</body>
+</html>
